@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x3060
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    tshort
-#define DESCRIPTION     The perfect keyboard isn't flat
+#define DESCRIPTION     The perfect keyboard is not flat
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
