@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
+#define VENDOR_ID       0xBEEF
 #define PRODUCT_ID      0x3060
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    tshort
-#define DESCRIPTION     The perfect keyboard is not flat
+#define MANUFACTURER    nacly
+#define DESCRIPTION     pcb enabled dactyl manuform mini
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
@@ -41,20 +41,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PERMISSIVE_HOLD
 
 //Define EE_HANDS for qmk configurator use.
-#define EE_HANDS
 
 /* serial.c configuration for split keyboard */
-#define SOFT_SERIAL_PIN D0
+#define SOFT_SERIAL_PIN D2
 
 /* key matrix size */
 // Rows are doubled-up
 #define MATRIX_ROWS 12
 #define MATRIX_COLS 6
-
+#define SPLIT_HAND_PIN D1
 // wiring of each half
-#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
-#define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
+#define MATRIX_ROW_PINS { C6, B3, D4, B1, D0, F7 }
+#define MATRIX_COL_PINS { B4, B5, E6, B6, D7, B2 }
 
 // WS2812 RGB LED strip input and number of LEDs
-#define RGB_DI_PIN D3
+#define RGB_DI_PIN F4
 #define RGBLED_NUM 12
